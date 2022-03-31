@@ -6,6 +6,5 @@ jobs:
     steps:
       - name: List files in the repository
         run: |
-          target_date=`date -d '-0 day' '+%Y%m%d'`
           ./crawler/daily_reuters.py
           ./main.py -vocabs ${vocabs} -predict True -date ${target_date}

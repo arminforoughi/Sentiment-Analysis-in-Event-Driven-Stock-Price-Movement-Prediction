@@ -6,5 +6,5 @@ jobs:
     steps:
       - name: List files in the repository
         run: |
-          ./crawler/daily_reuters.py
+          python3 crawler/daily_reuters.py
           ./main.py -vocabs ${vocabs} -predict True -date ${target_date}

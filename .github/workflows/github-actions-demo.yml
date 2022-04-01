@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: List files in the repository
+        path: build
         run: |
           python3 crawler/daily_reuters.py
-          ./main.py -vocabs ${vocabs} -predict True -date ${target_date}
+          
+          #./main.py -vocabs ${vocabs} -predict True -date ${target_date}
